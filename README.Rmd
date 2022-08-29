@@ -1,0 +1,52 @@
+---
+output: github_document
+---
+
+# watercolours
+
+This package contains palettes derived from watercolour artists including
+X and Y.
+
+```{r}
+library(watercolours)
+watercolours$frankwebb
+```
+
+## Examples
+
+```{r}
+library(ggplot2)
+ggplot(diamonds, aes(color, fill = clarity)) +
+  geom_bar() +
+  scale_fill_watercolours(palette = "staalmeesters")
+```
+
+```{r}
+ggplot(mtcars, aes(disp, mpg, col = qsec)) +
+  geom_point(size = 4) +
+  scale_color_watercolours(discrete = FALSE)
+```
+
+The available palettes are
+
+Frank Webb - Unknown painting
+
+```{r}
+ochRe::viz_palette(watercolours$frankwebb)
+```
+
+Dolla Richmond -[*Mount Egmont*](https://artsandculture.google.com/asset/mount-egmont/2AH3LhLcXldhDA)
+
+```{r}
+ochRe::viz_palette(watercolours$dollarichmond)
+```
+
+
+## Installation
+
+You can install `watercolours` from github with:
+
+```{r, message=FALSE}
+devtools::install_github("gjcooper/watercolours")
+```
+
