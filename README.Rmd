@@ -18,7 +18,7 @@ watercolours$frankwebb
 library(ggplot2)
 ggplot(diamonds, aes(color, fill = clarity)) +
   geom_bar() +
-  scale_fill_watercolours(palette = "staalmeesters")
+  scale_fill_watercolours(palette = "dollarichmond")
 ```
 
 ```{r}
@@ -32,13 +32,13 @@ The available palettes are
 Frank Webb - Unknown painting
 
 ```{r}
-ochRe::viz_palette(watercolours$frankwebb)
+viz_palette(watercolours$frankwebb)
 ```
 
 Dolla Richmond -[*Mount Egmont*](https://artsandculture.google.com/asset/mount-egmont/2AH3LhLcXldhDA)
 
 ```{r}
-ochRe::viz_palette(watercolours$dollarichmond)
+viz_palette(watercolours$dollarichmond)
 ```
 
 

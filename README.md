@@ -1,94 +1,59 @@
 
-dutchmasters
-============
+# watercolours
 
-This package offers six color palettes derived from paintings by the Dutch masters Johannes Vermeer and Rembrandt van Rijn. This package is inspired by the [`ochRe` package](https://github.com/ropenscilabs/ochRe/) and functions from this package have been shamelessly copied. The list `dutchmasters::dutchmasters` contains six named character vectors with color codes. The names represent the colors and where on the painting the color was taken.
+This package contains palettes derived from watercolour artists
+including X and Y.
 
 ``` r
-library(dutchmasters)
-dutchmasters$anatomy
+library(watercolours)
+watercolours$frankwebb
 ```
 
-    ## grey(corpse) black(cloak)  pink(cheek) brown(cloak) brown(table) 
-    ##    "#B2AAA2"    "#0D0B0C"    "#B47562"    "#332826"    "#B18147" 
-    ##  red(muscle) white(colar) 
-    ##    "#803B31"    "#CBC2C3"
+    ##      roof     tree1     tree2      sky1      sky2 
+    ## "#5B332B" "#D0781C" "#73842E" "#51B4B9" "#013781"
 
-Examples
---------
+## Examples
 
 ``` r
 library(ggplot2)
 ggplot(diamonds, aes(color, fill = clarity)) +
   geom_bar() +
-  scale_fill_dutchmasters(palette = "staalmeesters")
+  scale_fill_watercolours(palette = "dollarichmond")
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ``` r
 ggplot(mtcars, aes(disp, mpg, col = qsec)) +
   geom_point(size = 4) +
-  scale_color_dutchmasters(discrete = FALSE)
+  scale_color_watercolours(discrete = FALSE)
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-The six available palettes are
+The available palettes are
 
-Vermeer - [*The Milkmaid*](https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer))
+Frank Webb - Unknown painting
 
 ``` r
-ochRe::viz_palette(dutchmasters$milkmaid)
+viz_palette(watercolours$frankwebb)
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-Vermeer - [*Girl with a Pearl Earring*](https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring)
+Dolla Richmond -[*Mount
+Egmont*](https://artsandculture.google.com/asset/mount-egmont/2AH3LhLcXldhDA)
 
 ``` r
-ochRe::viz_palette(dutchmasters$pearl_earring)
+viz_palette(watercolours$dollarichmond)
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-Vermeer - [*View of Delft*](https://en.wikipedia.org/wiki/View_of_Delft)
+## Installation
 
-``` r
-ochRe::viz_palette(dutchmasters$view_of_Delft)
-```
-
-![](README_files/figure-markdown_github/unnamed-chunk-6-1.png)
-
-Vermeer - [*The Little Street*](https://en.wikipedia.org/wiki/The_Little_Street)
+You can install `watercolours` from github with:
 
 ``` r
-ochRe::viz_palette(dutchmasters$little_street)
-```
-
-![](README_files/figure-markdown_github/unnamed-chunk-7-1.png)
-
-Rembrandt - [*The Anatomy Lesson of Dr. Nicolaes Tulp*](https://en.wikipedia.org/wiki/The_Anatomy_Lesson_of_Dr._Nicolaes_Tulp)
-
-``` r
-ochRe::viz_palette(dutchmasters$anatomy)
-```
-
-![](README_files/figure-markdown_github/unnamed-chunk-8-1.png)
-
-Rembrandt - [*The "Staalmeesters"*](https://en.wikipedia.org/wiki/Syndics_of_the_Drapers%27_Guild)
-
-``` r
-ochRe::viz_palette(dutchmasters$staalmeester)
-```
-
-![](README_files/figure-markdown_github/unnamed-chunk-9-1.png)
-
-Installation
-------------
-
-You can install `dutchmasters` from github with:
-
-``` r
-devtools::install_github("EdwinTh/dutchmasters")
+devtools::install_github("gjcooper/watercolours")
 ```
