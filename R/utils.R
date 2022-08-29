@@ -14,7 +14,7 @@
 #' @param ttl character, title to be displayed (the name of the palette)
 #' @param num numeric, the number of colours to display
 #' @examples
-#' viz_palette(watercolours$frankwebb, "frankwebb interpolated to 25", num = 25)
+#' viz_palette(watercolour$frankwebb, "frankwebb interpolated to 25", num = 25)
 #' 
 #' @export
 #' @importFrom graphics image

@@ -1,4 +1,4 @@
-#' Watercolours Colour Palettes
+#' Watercolour Colour Palettes
 #'
 #' Colour palettes derived from paintings from the watercolour artists both
 #'   contemporary and masters. Inspired by the [ochRe](https://github.com/ropenscilabs/ochRe)
@@ -10,9 +10,9 @@
 #'   Frank Webb - Unknown artwork
 #'
 #' @examples
-#' viz_palette(watercolours$frankwebb)
+#' viz_palette(watercolour$frankwebb)
 #' @export
-watercolours <- list(
+watercolour <- list(
   ## Frank Webb - Unknown artwork
   frankwebb =
     c("roof"        = "#5B332B",
