@@ -7,8 +7,11 @@
 #' @param reverse If TRUE, the direction of the colours is reversed.
 #'
 #' @export
-watercolour_pal <- function(palette="frankwebb", alpha = 1, reverse = FALSE) {
+watercolour_pal <- function(palette="frankwebb", alpha = 1, reverse = FALSE, discrete = TRUE) {
     pal <- watercolour[[palette]]
+    if (!discrete) {
+      pal = c(pal[1], pal[length(pal)])
+    }
     if (reverse){
         pal <- rev(pal)
     }
@@ -53,7 +56,7 @@ scale_color_watercolour <- function(..., palette = "frankwebb",
    if (discrete) {
        discrete_scale("colour", "watercolour", palette=watercolour_pal(palette, alpha = alpha, reverse = reverse))
    } else {
-       scale_color_gradientn(colours = watercolour_pal(palette, alpha = alpha, reverse = reverse, ...)(256))
+       scale_color_gradientn(colours = watercolour_pal(palette, alpha = alpha, reverse = reverse, discrete = FALSE, ...)(256))
    }
 }
 
@@ -81,6 +84,6 @@ scale_fill_watercolour <- function(..., palette="frankwebb",
         discrete_scale("fill", "watercolour", palette=watercolour_pal(palette, alpha = alpha, reverse = reverse))
     }
     else {
-        scale_fill_gradientn(colours = watercolour_pal(palette, alpha = alpha, reverse = reverse, ...)(256))
+        scale_fill_gradientn(colours = watercolour_pal(palette, alpha = alpha, reverse = reverse, discrete = FALSE, ...)(256))
     }
 }
