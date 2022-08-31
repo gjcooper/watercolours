@@ -4,25 +4,20 @@
 \alias{scale_fill_watercolour}
 \title{Setup fill palette for ggplot2}
 \usage{
-scale_fill_watercolour(
-  ...,
-  palette = "frankwebb",
-  discrete = TRUE,
-  alpha = 1,
-  reverse = TRUE
-)
+scale_fill_watercolour(..., palette = "zorn", type = "discrete", alpha = 1)
 }
 \arguments{
 \item{...}{additional arguments to pass to scale_color_gradientn}
 
 \item{palette}{Choose from 'watercolour_palettes' list}
 
-\item{discrete}{whether to use a discrete colour palette}
+\item{type}{A string representing the palette type, should be one of
+discrete, continuous or diverging}
 
 \item{alpha}{The alpha transparency, a number in [0,1], see argument alpha in
 \code{\link[grDevices]{hsv}}.}
 
-\item{reverse}{If TRUE, the direction of the colours is reversed.}
+\item{discrete}{whether to use a discrete colour palette}
 }
 \description{
 Setup fill palette for ggplot2

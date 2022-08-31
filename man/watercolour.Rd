@@ -5,7 +5,7 @@
 \alias{watercolour}
 \title{Watercolour Colour Palettes}
 \format{
-An object of class \code{list} of length 2.
+An object of class \code{list} of length 3.
 }
 \usage{
 watercolour
@@ -19,9 +19,13 @@ package.
 \details{
 Available palettes:
 
-Frank Webb - Unknown artwork
+Anders Zorn - Sommarnöje (1886) - https://commons.wikimedia.org/wiki/File:Sommarn\%C3\%B6je_(1886),_akvarell_av_Anders_Zorn.jpg
+
+Fidelia Bridges - Calla Lilly (1875) - https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-\emph{Calla_Lily}-\emph{Fidelia_Bridges}-_overall.jpg
+
+Dorothy (Dolla) Richmond - Mount Egmont (1929) - https://commons.wikimedia.org/wiki/File:D._K.\emph{Richmond}-\emph{Mount_Egmont}-_Google_Art_Project.jpg
 }
 \examples{
-viz_palette(watercolour$frankwebb)
+viz_palette(watercolour$zorn$discrete)
 }
 \keyword{datasets}

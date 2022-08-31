@@ -5,32 +5,19 @@
 \alias{scale_colour_watercolour}
 \title{Setup colour palette for ggplot2}
 \usage{
-scale_color_watercolour(
-  ...,
-  palette = "frankwebb",
-  discrete = TRUE,
-  alpha = 1,
-  reverse = FALSE
-)
+scale_color_watercolour(..., palette = "zorn", type = "discrete", alpha = 1)
 
-scale_colour_watercolour(
-  ...,
-  palette = "frankwebb",
-  discrete = TRUE,
-  alpha = 1,
-  reverse = FALSE
-)
+scale_colour_watercolour(..., palette = "zorn", type = "discrete", alpha = 1)
 }
 \arguments{
 \item{...}{additional arguments to pass to scale_color_gradientn}
 
 \item{palette}{Choose from 'watercolour_palettes' list}
 
-\item{discrete}{whether to use a discrete colour palette}
+\item{type}{A string representing the palette type, should be one of
+discrete, continuous or diverging}
 
 \item{alpha}{transparency}
-
-\item{reverse}{logical, Reverse the order of the colours?}
 }
 \description{
 Setup colour palette for ggplot2
@@ -42,8 +29,8 @@ ggplot(mtcars, aes(mpg, wt)) +
   scale_colour_watercolour()
 ggplot(mtcars, aes(mpg, wt)) +
   geom_point(aes(colour = hp)) +
-  scale_colour_watercolour(palette="frankwebb", discrete = FALSE)
+  scale_colour_watercolour(palette="zorn", type = "continuous")
 ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy, color = class)) +
-  scale_colour_watercolour(palette="dollarichmond")
+  scale_colour_watercolour(palette="richmond")
 }

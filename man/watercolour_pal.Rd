@@ -4,14 +4,15 @@
 \alias{watercolour_pal}
 \title{watercolour palette with ramped colours}
 \usage{
-watercolour_pal(palette = "frankwebb", alpha = 1, reverse = FALSE)
+watercolour_pal(palette = "zorn", type = "discrete", alpha = 1)
 }
 \arguments{
 \item{palette}{Choose from 'watercolour_palettes' list}
 
-\item{alpha}{transparency}
+\item{type}{A string representing the palette type, should be one of
+discrete, continuous or diverging}
 
-\item{reverse}{If TRUE, the direction of the colours is reversed.}
+\item{alpha}{transparency}
 }
 \description{
 watercolour palette with ramped colours

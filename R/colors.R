@@ -7,28 +7,77 @@
 #'
 #'   Available palettes:
 #'
-#'   Frank Webb - Unknown artwork
+#'   Anders Zorn - Sommarnöje (1886) - https://commons.wikimedia.org/wiki/File:Sommarn%C3%B6je_(1886),_akvarell_av_Anders_Zorn.jpg
 #'
+#'   Fidelia Bridges - Calla Lilly (1875) - https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_-_Calla_Lily_-_Fidelia_Bridges_-_overall.jpg
+#'
+#'   Dorothy (Dolla) Richmond - Mount Egmont (1929) - https://commons.wikimedia.org/wiki/File:D._K._Richmond_-_Mount_Egmont_-_Google_Art_Project.jpg
 #' @examples
-#' viz_palette(watercolour$frankwebb)
+#' viz_palette(watercolour$zorn$discrete)
 #' @export
-watercolour <- list(
-  ## Frank Webb - Unknown artwork
-  frankwebb =
-    c("roof"        = "#5B332B",
-      "tree1"       = "#D0781C",
-      "tree2"        = "#73842E",
-      "sky1"         = "#51B4B9",
-      "sky2"         = "#013781"
-      ),
+watercolour = list(
+  zorn = list(
+    discrete =  c(
+      "wood"   = "#7B6154",
+      "water"  = "#5A5B33",
+      "chair"  = "#406377",
+      "water2" = "#696C69",
+      "trees"  = "#484A49",
+      "boat"   = "#6D4D30",
+      "water3" = "#323D32",
+      "hat"    = "#A3915D"
+    ),
+    continuous = c(
+      "water3" = "#323D32",
+      "dress"  = "#D6D2CA"
+    ),
+    diverging = c(
+      "water3" = "#323D32",
+      "dress"  = "#D6D2CA",
+      "boat"   = "#6D4D30"
+    )
+  ),
+
+  bridges = list(
+    discrete = c(
+      "leaf(sun)"   = "#C2B64A",
+      "leaf(under)" = "#707540",
+      "leaf(shade)" = "#687466",
+      "background"  = "#7E775A",
+      "stem"        = "#525D40",
+      "flower"      = "#D9D4C1"
+    ),
+    continuous = c(
+      "flower"      = "#D9D4C1",
+      "stem"        = "#525D40"
+    ),
+    diverging = c(
+      "leaf(shade)" = "#687466",
+      "flower"      = "#D9D4C1",
+      "leaf(sun)"   = "#C2B64A"
+    )
+  ),
 
   ## Dolla Richmond - Mount Egmont
   ## https://artsandculture.google.com/asset/mount-egmont/2AH3LhLcXldhDA
-  dollarichmond =
-    c("tree1"  = "#A18136",
-      "tree2"   = "#6F7728",
-      "tree3"   = "#5F4C3C",
-      "sky"     = "#405FA1",
-      "snow"    = "#7A8273"
-      )
+  richmond = list(
+    discrete = c(
+      "tree(fg)"   = "#94572A",
+      "tree(mg)"   = "#5B634B",
+      "tree(bg)"   = "#5D616C",
+      "tree(mg2)"  = "#573A3A",
+      "sky"        = "#6477A1",
+      "trunk"      = "#504D44",
+      "newgrowth"  = "#C68B4B"
+    ),
+    continuous = c(
+      "snow"       = "#E6D8BD",
+      "tree(mg2)"  = "#573A3A"
+    ),
+    diverging = c(
+      "sky"        = "#6477A1",
+      "snow"       = "#E6D8BD",
+      "tree(fg)"   = "#94572A"
+    )
+  )
 )

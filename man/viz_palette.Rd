@@ -27,6 +27,5 @@ over the vector of colours in the chosen palette.
 Shamelessly borrowed from the paletti/ochRe palette packages
 }
 \examples{
-viz_palette(watercolour$frankwebb, "frankwebb interpolated to 25", num = 25)
-
+viz_palette(watercolour$richmond$continuous, "richmond interpolated to 25", num = 25)
 }
