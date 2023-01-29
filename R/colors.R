@@ -62,13 +62,12 @@ watercolour = list(
   ## https://artsandculture.google.com/asset/mount-egmont/2AH3LhLcXldhDA
   richmond = list(
     discrete = c(
+      "newgrowth"  = "#C68B4B",
       "tree(fg)"   = "#94572A",
+      "tree(mg2)"  = "#573A3A",
       "tree(mg)"   = "#5B634B",
       "tree(bg)"   = "#5D616C",
-      "tree(mg2)"  = "#573A3A",
-      "sky"        = "#6477A1",
-      "trunk"      = "#504D44",
-      "newgrowth"  = "#C68B4B"
+      "sky"        = "#6477A1"
     ),
     continuous = c(
       "snow"       = "#E6D8BD",
