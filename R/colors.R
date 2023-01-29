@@ -78,5 +78,28 @@ watercolour = list(
       "snow"       = "#E6D8BD",
       "tree(fg)"   = "#94572A"
     )
+  ),
+
+  ## Albrecht Durer - Wing of a Blue Roller
+  ## https://commons.wikimedia.org/wiki/File:Duerer_wing_of_a_blue_roller.jpg
+  durer = list(
+    discrete = c(
+      "flight"     = "#1583B9",
+      "shoulder"   = "#72A286",
+      "shadow"     = "#866D76",
+      "blood"      = "#CC5A54",
+      "signature"  = "#E9A281",
+      "chest"      = "#A16B47",
+      "down"       = "#DAB354"
+    ),
+    continuous = c(
+      "paper"      = "#F5E5C4",
+      "flight"     = "#1583B9"
+    ),
+    diverging = c(
+      "flight"     = "#1583B9",
+      "paper"      = "#F5E5C4",
+      "blood"      = "#CC5A54"
+    )
   )
 )
