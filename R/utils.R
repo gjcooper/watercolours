@@ -39,9 +39,9 @@ viz_palette <- function(pal, ttl = deparse(substitute(pal)), num = length(pal)) 
 show_palette <- function(name) {
   if (!name %in% names(watercolour)) {
     warning(name, "not found in watercolours package")
-    return
+    return()
   }
-  par(mfrow = c(3, 1))
+  graphics::par(mfrow = c(3, 1))
   viz_palette(watercolour[[name]][["discrete"]], paste(name, "discrete"))
   viz_palette(watercolour[[name]][["continuous"]], paste(name, "continuous"), 20)
   viz_palette(watercolour[[name]][["diverging"]], paste(name, "diverging"), 19)

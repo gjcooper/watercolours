@@ -3,6 +3,7 @@
 export(scale_color_watercolour)
 export(scale_colour_watercolour)
 export(scale_fill_watercolour)
+export(show_palette)
 export(viz_palette)
 export(watercolour)
 export(watercolour_pal)

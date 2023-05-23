@@ -1,7 +1,7 @@
 Package: watercolours
 Type: Package
 Title: Colour Palettes based on Watercolour Paintings
-Version: 0.0.7
+Version: 0.1.0
 Author: Gavin Cooper
 Maintainer: Gavin Cooper <gavin@gavincooper.net>
 Description: Colour palettes derived from famous paintings from the watercolour
@@ -10,5 +10,5 @@ Imports: ggplot2, grDevices, graphics
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.3
 Roxygen: list(markdown = TRUE)
