@@ -1,5 +1,5 @@
 #' Show a single palette
-#' 
+#'
 #' Display a single palette to see whether it meets your needs.
 #' If no \code{num} parameter is given,
 #' all the colours in the palette will be displayed.
@@ -18,12 +18,31 @@
 #' @export
 #' @importFrom graphics image
 #' @importFrom grDevices colorRampPalette
-#' 
 viz_palette <- function(pal, ttl = deparse(substitute(pal)), num = length(pal)) {
     if(num <= 0)
         stop("'num' should be > 0")
     pal_func <- colorRampPalette(pal)
-    image(seq_len(num), 1, as.matrix(seq_len(num)), col = pal_func(num), 
-          main = paste0(ttl, " (", length(pal), " colours in palette, ", num, " displayed)"), 
+    image(seq_len(num), 1, as.matrix(seq_len(num)), col = pal_func(num),
+          main = paste0(ttl, " (", length(pal), " colours in palette, ", num, " displayed)"),
           xlab = "", ylab = "", xaxt = "n", yaxt = "n",  bty = "n")
+}
+
+#' Show a all palette types for a named palette
+#'
+#' Display all the type variations of a single palette to see whether it meets
+#' your needs.
+#'
+#' @param name The name of a watercolour palette
+#' @examples
+#' show_palette("richmond")
+#' @export
+show_palette <- function(name) {
+  if (!name %in% names(watercolour)) {
+    warning(name, "not found in watercolours package")
+    return
+  }
+  par(mfrow = c(3, 1))
+  viz_palette(watercolour[[name]][["discrete"]], paste(name, "discrete"))
+  viz_palette(watercolour[[name]][["continuous"]], paste(name, "continuous"), 20)
+  viz_palette(watercolour[[name]][["diverging"]], paste(name, "diverging"), 19)
 }

@@ -11,7 +11,6 @@ X and Y.
 
 ```{r}
 library(watercolours)
-watercolours$frankwebb
 ```
 
 ## Examples
@@ -20,29 +19,40 @@ watercolours$frankwebb
 library(ggplot2)
 ggplot(diamonds, aes(color, fill = clarity)) +
   geom_bar() +
-  scale_fill_watercolours(palette = "dollarichmond")
+  scale_fill_watercolour(palette = "durer")
 ```
 
 ```{r}
 ggplot(mtcars, aes(disp, mpg, col = qsec)) +
   geom_point(size = 4) +
-  scale_color_watercolours(discrete = FALSE)
+  scale_color_watercolour(type = "continuous")
 ```
 
 The available palettes are
 
-Frank Webb - Unknown painting
+Anders Zorn - Sommarnöje (1886)
 
 ```{r}
-viz_palette(watercolours$frankwebb)
+show_palette("zorn")
+```
+
+Fidelia Bridges - Calla Lilly (1875)
+
+```{r}
+show_palette("bridges")
 ```
 
 Dolla Richmond -[*Mount Egmont*](https://artsandculture.google.com/asset/mount-egmont/2AH3LhLcXldhDA)
 
 ```{r}
-viz_palette(watercolours$dollarichmond)
+show_palette("richmond")
 ```
 
+Albrecht Durer - Wing of a Blue Roller
+
+```{r}
+show_palette("durer")
+```
 
 ## Installation
 
