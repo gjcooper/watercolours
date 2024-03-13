@@ -1,7 +1,7 @@
 Package: watercolours
 Type: Package
 Title: Colour Palettes based on Watercolour Paintings
-Version: 0.1.1
+Version: 0.1.2
 Author: Gavin Cooper
 Maintainer: Gavin Cooper <gavin@gavincooper.net>
 Description: Colour palettes derived from famous paintings from the watercolour

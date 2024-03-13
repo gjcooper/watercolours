@@ -43,7 +43,7 @@ scale_color_watercolour <- function(...,
                                     alpha = 1
                                     ) {
   if (type == "discrete") {
-    discrete_scale("colour", "discrete", watercolour_pal(palette, type, alpha))
+    discrete_scale("colour", "discrete", watercolour_pal(palette, type, alpha), ...)
   } else {
     scale_color_gradientn(colours = watercolour_pal(palette, type, alpha)(256), ...)
   }
@@ -73,7 +73,7 @@ scale_fill_watercolour <- function(...,
                                    alpha = 1
                                    ) {
   if (type == "discrete") {
-    discrete_scale("fill", "discrete", watercolour_pal(palette, type, alpha))
+    discrete_scale("fill", "discrete", watercolour_pal(palette, type, alpha), ...)
   } else {
     scale_fill_gradientn(colours = watercolour_pal(palette, type, alpha)(256), ...)
   }
