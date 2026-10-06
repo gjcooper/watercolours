@@ -29,7 +29,8 @@ ggplot(mtcars, aes(disp, mpg, col = qsec)) +
 
 The available palettes are
 
-Anders Zorn - Sommarnöje (1886)
+Anders Zorn -
+[*Sommarnöje*](https://en.wikipedia.org/wiki/Sommarn%C3%B6je) (1886)
 
 ``` r
 show_palette("zorn")
@@ -37,7 +38,8 @@ show_palette("zorn")
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-Fidelia Bridges - Calla Lilly (1875)
+Fidelia Bridges - [*Calla
+Lilly*](https://www.brooklynmuseum.org/objects/1638) (1875)
 
 ``` r
 show_palette("bridges")
@@ -47,6 +49,7 @@ show_palette("bridges")
 
 Dolla Richmond -[*Mount
 Egmont*](https://artsandculture.google.com/asset/mount-egmont/2AH3LhLcXldhDA)
+(1929)
 
 ``` r
 show_palette("richmond")
@@ -54,13 +57,23 @@ show_palette("richmond")
 
 ![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-Albrecht Durer - Wing of a Blue Roller
+Albrecht Durer - [*Wing of a Blue
+Roller*](https://en.wikipedia.org/wiki/Wing_of_a_European_Roller) (1512)
 
 ``` r
 show_palette("durer")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+Wassily Kandinsky - [*Delicate Tension.
+No. 85*](https://www.wassilykandinsky.net/work-271.php)
+
+``` r
+show_palette("kandinsky")
+```
+
+![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
 
 ## Installation
 

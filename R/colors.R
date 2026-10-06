@@ -101,5 +101,28 @@ watercolour = list(
       "paper"      = "#F5E5C4",
       "blood"      = "#CC5A54"
     )
+  ),
+
+  ## Wassily Kandinsky - Delicate Tension. No. 85
+  ## https://www.wassilykandinsky.net/work-271.php
+  kandinsky = list(
+    discrete = c(
+      "yellow"    = "#e9c028",
+      "pink"      = "#b8266d",
+      "blue"      = "#205d9e",
+      "orange"    = "#d97633",
+      "greengrey" = "#48685b",
+      "red"       = "#b81e1e"
+    ),
+    continuous = c(
+      "mist"      = "#efedc7",
+      "pink"      = "#b8266d"
+    ),
+    diverging = c(
+      "greengrey" = "#48685b",
+      "mist"      = "#efedc7",
+      "orange"    = "#d97633"
+    )
   )
+
 )
